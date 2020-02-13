@@ -1,0 +1,119 @@
+<?php
+/**
+ * The template for displaying all single posts and attachments
+ *
+ * @package WordPress
+ * @subpackage Twenty_Sixteen
+ * @since Twenty Sixteen 1.0
+ */
+
+get_header('about'); ?>
+<style type="text/css">
+	.full_con{
+display:none;
+}
+.btn-container{
+  margin: auto;
+  height:44px;
+  width:100%;
+  
+}
+a:active{
+  color:#ffd323;
+}
+button{
+  user-select:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  cursor:pointer;
+  border:none;
+  padding:8px;
+  font-size:20px;
+  color:#000;
+  font-family:cursive;
+  box-sizing:border-box;
+}
+</style>
+    <section class="case-banner">
+        <div class="banner" style>
+            <!-- <img src="images/access.jpg"> -->
+            <!-- <div class="case-name"> -->
+                <!--h1><?php the_title(); ?></h1-->
+            <!-- </div> -->
+
+        </div>
+    </section>
+
+    <section class="are-des">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="are-long">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 are-title">
+                    <h3>Case Study 1: West L.A. Apartments</h3>
+                    <span>Marina del Rey, CA</span>
+                </div>
+                <div class="col-md-6 are-desp">
+                	<div class="less_con">
+                    <p>Located in the exclusive community of Marina del Rey, this 550-unit apartment complex was suffering from building failures as balcony railings were inexplicably falling apart. Originally held together with screws , balcony frames contained inset glass that would fall out as railing assemblies would fail. None of the project’s engineers or construction managers, could figure out the source of the failures or the way in which to address them. There were 49 failures reported when Rightt Structures was brought in to design, develop and construct a solution.</p>
+                    </div>
+                    <div class="full_con">
+                    <p>Rightt Structures developed a simple, elegant “collar” solution that welded the glass to the post but was also flexible so it could move up and down. They managed the installation of 4,000 of these collars for each balcony in the complex which included taking each balcony apart, except for the post, slipping the collars on and then putting everything back together. During the process it was discovered that there was no blocking for the posts, so they ended up having to tear apart the balcony underneath, fix all the blocking, re-stucco it and put it back together.</p>
+
+                    <p>Rightt  Structures invented the “collar” solution, managed the fabrication, worked closely with the building owner and city throughout the process, and made all balcony repairs, while the building remained owner-occupied in the 80ft building. This intensive, complicated project was completed over the course of two years, saving the owner hundreds of millions of dollars, and without a single accident or resident complaint.</p>
+                   </div>
+              
+                    <div class="btn-container">
+<button id="toggle">Read Full Story</button>
+</div>
+                </div>
+                <div class="col-md-6 are-frame">
+                    <p>balcony railing system<br>
+                        $18M<br>
+                        timeframe</p>
+                    <p>An innovative solution and meticulous installation that saved lives and millions of dollars.</p>
+                    <a href="#">download full story (pdf)</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="are-imgs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="are-img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/are1.jpg">
+                        <p>Caption</p>
+                    </div>
+                    <div class="are-img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/are2.jpg">
+                        <p>Caption</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="are-img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/are3.jpg">
+                        <p>Caption</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="are-img">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/are4.jpg">
+                        <p>Caption</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<?php get_footer(); ?>

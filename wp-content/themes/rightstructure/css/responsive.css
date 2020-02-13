@@ -1,0 +1,278 @@
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1300px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .banner {
+        /*max-width: 1200px;
+        margin: auto;*/
+    }
+}
+
+@media (max-width: 1093px) {
+	.logo-d .textwidget {
+		width: 135%;
+	}
+	.logo p {
+		display: inline-flex;
+          /*padding-right: 11em;*/
+          margin-right: 11em;
+
+	}
+}
+
+@media (max-width: 767px) {
+    .about-side {
+        padding-left: 0;
+        padding-right: 0;
+    }
+	.copyright {
+		border: none;
+	}
+    .serv-dir {
+        margin: 25px 0;
+        /*padding: 0;*/
+    }
+    .serv-text h2 {
+        font-size: 1rem;
+    }
+    .serv-dir img {
+        /*width: unset;*/
+    }
+    .website-descrip {
+        margin-top: 15px;
+    }
+    section.services-img .container {
+/*         padding: 0; */
+    }
+    .services-img {
+        margin-top: 15px;
+    }
+    .proj-side {
+        padding: 0 !important;
+    }
+    .project-text {
+        padding-bottom: 20px;
+        margin: 20px 20px 0;
+        border-bottom: 1px solid #003e7e;
+    }
+    .caseStudy, .waterPapers {
+        margin: 20px 20px 0;
+    }
+    .sin-case {
+        text-align: center;
+    }
+    .sin-case img {
+    }
+    .case-study {
+        margin: 0;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .caseStudy p {
+        text-align: left;
+    }
+    .caseStudy h3, .waterPaper h3 {
+        margin-bottom: 15px;
+    }
+    .des2 {
+        display: none;
+    }
+    .servicess{padding-right: 0px!important;padding-left: 0px!important;margin-top: 20px;}
+    .are-frame {
+    padding-left: 16px;
+}
+   .are-frame1{display: block;}
+   .are-frame2{display: none;}
+   .project-deg {
+
+/*     padding-top: 70%; */
+
+}
+}
+
+@media (max-width: 720px) {
+    .logo-d img {
+        width: 100px;
+        height: auto;
+    }
+}
+
+@media (max-width: 610px) {
+   	.logo-d p {
+        display: none;
+    }
+    #navigation {
+        display: block;
+    }
+    #navigate {
+        display: none;
+    }
+    .copyright {
+        border: none;
+    }
+    .navigate nav ul {
+        border-right: none !important;
+    }
+    .navigate nav ul li a {
+        color: #003e7e !important;
+    }
+    .services-sec2 {
+        display: none !important;
+    }
+    ul.sub-menu {
+        border-top: 1px solid #003e7e !important;
+        margin-top: 20px !important;
+        width: 100% !important;
+    }
+  ul#menu p a{
+
+     color:#fff;
+    text-decoration: none;
+
+}
+
+   ul#menu p a:hover {
+
+     color:#fff;
+    text-decoration: none;
+
+}
+    ul#menu p a:focus {
+
+    color:#fff;
+    text-decoration: none;
+    outline: 0;
+
+}
+.services-img {
+    margin-top: 15px !important;
+}
+}
+
+@media (max-width: 600px) {
+    #menuToggle {
+        left: 35px;
+    }
+    .logo-d {
+        padding-right: 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+div#menuToggle{
+    top: 33px;
+}
+}
+
+@media (min-width: 481px) {
+    .serv-dir {
+        width: 33.33333333%;
+    }
+}
+
+@media (max-width: 480px) {
+    .serv-dir {
+        /*padding: 0;*/
+    }
+    .serv-text h2 {
+        font-size: 26px;
+    }
+	section.services-img .container {
+    	padding: 0;
+	}
+
+}
+
+@media (min-width: 992px) and (max-width: 1180px)  {
+   .container {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+}
+
+@media (min-width: 570px) and (max-width: 1300px) {
+	.container {
+		max-width: 100%;
+		padding: 0 50px;
+	}
+}
+
+@media (max-width: 569px) {
+	.container {
+		max-width: 100%;
+/* 		padding: 0; */
+	}
+}
+@media (max-width: 420px) {
+    .services-text p{
+       font-size: 16px;
+    }
+    .about-side p {
+    font-size: 16px;
+}
+.aree-des p,.are-desp p{
+ font-size: 16px;
+
+}
+.website-descrip p {
+    font-size: 16px;
+    line-height: 22px;
+}
+.are-imgs p{
+     font-size: 16px;
+}
+}
+@media (min-width: 460px) and (max-width: 767px) {
+	 .project-deg {
+    	padding-top: 0px!important;
+        text-align: center;
+        width: 390px;
+        padding-top: 100%;
+        background: #A7A9AC;
+        position: relative;
+        height: 390px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .caseStudy, .waterPapers {
+        margin: 20px 0px!important;
+    }
+    .case-study {
+        margin: auto;
+        padding-bottom: 10px;
+        padding-left: 0px!important;
+        padding-right: 0px!important;
+        text-align: center;
+    }
+    .caseStudy .col-md-4{
+        position: relative;
+        /* width: 100%; */
+        width: 390px;
+        text-align: center;
+        min-height: 1px;
+        margin: auto;
+        padding-right: 0px!important;
+        padding-left: 0px!important;
+    }
+ }
+
+@media (min-width: 611px) and (max-width: 1093px) {
+.logo-d .textwidget p span.phonee {
+    margin-right: 3.5px!important;
+}
+
+.logo-d .textwidget p span.emails {
+    margin-left: 3.5px!important;
+}
+}

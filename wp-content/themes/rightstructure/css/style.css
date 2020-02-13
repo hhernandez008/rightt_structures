@@ -1,0 +1,702 @@
+html {
+    overflow-x: hidden;
+}@font-face {
+    font-family: nudistalight;
+    src: url(fonts/Trebuchet MS.ttf);
+}
+
+body {
+    font-family: 'Signika', sans-serif;
+}
+
+/* Navigation Section */
+ .container {
+        max-width: 1300px;
+	 	padding: 0 50px;
+    }
+.navigate {
+	/*padding-top: 40px;*/
+    width: 50%;
+    padding-top: 0px;
+}
+
+.navigate nav ul {
+	padding: 0;
+}
+
+.navigate nav ul li {
+	list-style: none;
+  line-height: 12px;
+  margin: 20px 0 0 0;
+}
+
+.navigate nav ul li a {
+	font-size: 18px;
+	color: #003e7e;
+	text-decoration: none;
+    font-weight: 700;
+}
+
+#navigation {
+    display: none;
+}
+
+.menu-arp_menu-container {
+    margin: auto 0;
+}
+
+/* Hamburger Menu */
+
+#menuToggle
+{
+  display: block;
+    position: fixed;
+    top: 50px;
+    left: 50px;
+    z-index: 999;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+
+  cursor: pointer;
+
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #000000;
+  border-radius: 3px;
+  z-index: 1;
+  transform-origin: 4px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/*
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #fff;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 78px 28px 5px;
+  background: rgba(167, 169, 172, 0.8);
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+ul#menu li a {
+  color: #003e7e;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+ul#menu li.drop-down ul li a {
+  font-weight: 600;
+  font-size: 26px;
+}
+
+ul#menu p {
+    text-align: center;
+    color: #fff;
+    margin: 20px auto;
+}
+
+/* Right Logo Section */
+
+.logo-d {
+    text-align: right;
+    width: 50%;
+}
+
+.logo {
+    display: inline-flex;
+    float: right;
+}
+
+.logo p {
+    padding: 30px 30px 0 0;
+    color: #a7a9ac;
+    font-weight: 300;
+}
+.logo p a {
+
+    color: #a7a9ac;
+
+}
+.logo p a:hover {
+
+    color: #a7a9ac;
+    text-decoration: none;
+
+}
+.logo p a:focus {
+
+    color: #a7a9ac;
+    text-decoration: none;
+    outline: 0;
+
+}
+/* Section Service */
+
+.services-img {
+	margin-top: 40px;
+}
+
+.serv-dir {
+	position: relative;
+}
+
+.serv-dir img {
+	width: 100%;
+}
+
+.serv-text {
+    position: absolute;
+    font-family: Trebuchet MS!important;
+    top: 0;
+    padding-top: 40%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    /*background-color: rgba(0,0,0,0.5);*/
+    color: #ffffff;
+    right: 15px;
+    left: 15px;
+}
+
+.img-overlay {
+	background-color: rgba(0,0,0,0.5);
+}
+
+/* Website Description Section */
+
+.website-descrip {
+	margin-top: 40px;
+	color: #524e26;
+	font-size: 22px;
+    font-weight: 600;
+}
+.website-descrip p{
+
+    color: #524e26;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 300;
+    font-family: 'Signika', sans-serif;
+
+}
+/* Footer */
+
+footer {
+	margin-top: 40px;
+	color: #a7a9ac;
+    font-weight: 300;
+}
+
+.footer-deg {
+
+}
+
+.address {
+	border-top: 2px solid #a7a9ac;
+    font-size: 16px;
+    padding-left: 0px;
+}
+
+.copyright {
+	text-align: right;
+	border-top: 2px solid #a7a9ac;
+    font-size: 14px;
+        padding-right: 0px;
+
+}
+
+
+/* ABOUT US PAGE */
+
+.header-contain {
+    padding-right: 80px;
+}
+
+.header-row {
+  display: inline-flex;
+  width: 100%;
+}
+
+.active a {
+  color: #a7a9ac !important;
+}
+
+/*.current-menu-item a {
+    color: #a7a9ac !important;
+}
+*/
+.serv-text a {
+	color: #ffffff;
+}
+
+nav.services-sec1 {
+  width: min-content;
+}
+
+.services-sec2 {
+  margin: auto;
+  margin-top: 20px;
+  width: -webkit-fill-available;
+	display: inline-flex;
+}
+
+.services-sec2 li {
+  list-style: none;
+  display: inline-flex;
+  margin: auto;
+  padding-right: 40px;
+}
+
+.services-sec2 li a {
+  font-weight: 700;
+  font-size: 16px;
+	text-decoration: none;
+}
+.accessM a {
+  color: #003e7e!important;
+}
+
+.resolveM a {
+  color: #003e7e!important;
+}
+
+.executeM a {
+  color: #003e7e!important;
+}
+
+.about-side p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #524e26;
+}
+/*
+.accessM a {
+  color: #00391F!important;
+}
+
+.resolveM a {
+  color: #49182D!important;
+}
+
+.executeM a {
+  color: #933C06!important;
+}
+
+.about-side p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #524e26;
+}
+*/
+/* PROJECTS PAGE */
+
+section.projects, section.abouts {
+  margin-top: 40px;
+}
+
+.col-md-4.proj-side {
+    padding-right: 25px;
+}
+
+.col-md-8.proj-side, .about-side {
+  padding-left: 25px;
+}
+/*
+.project-deg {
+    text-align: center;
+    width: 100%;
+    padding-top: 100%;
+    background: #A7A9AC;
+    position: relative;
+} */
+
+.project-deg {
+  position: relative;
+}
+
+.project-texty h1 {
+    font-size: 32px;
+    text-align: center;
+    font-family: Trebuchet MS!important;
+    /*font-family: 'Signika', sans-serif;*/
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.project-deg img {
+    width: 100%;
+    height: 100%;
+}
+
+.project-texty {
+    position: absolute;
+    top: 0;
+    padding-top: 40%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    padding-right: 10px;
+    color: #ffffff;
+    right: 15px;
+    left: 15px;
+}
+
+
+.projects h3, .projects p {
+    font-weight: 300;
+    font-size: 14px;
+    color: #003e7e;
+}
+
+.project-text {
+    margin-top: 20px;
+}
+
+.project-text p {
+    margin-bottom: 30px;
+}
+
+.case-study img{
+  width: 100%;
+}
+
+.case-study {
+/*   padding-bottom: 25px; */
+/*   border-bottom: 1px solid #003e7e; */
+}
+
+.col-md-4.sin-case {
+    position: relative;
+}
+
+.col-md-4.sin-case h2 {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    padding-right: 30px;
+    color: #fff;
+}
+
+.sin-case p {
+  margin: 10px 0;
+}
+
+.waterPapers {
+  margin-top: 30px;
+}
+
+.waterPapers p {
+  margin-top: 10px;
+}
+
+.waterPapers img {
+    width: 100%;
+}
+
+
+/* SERVICES PAGE */
+
+.services-text p {
+  font-weight: 300;
+  font-size: 20px;
+  color: #524e26;
+}
+
+.services-text .services-list h3, .services-text .services-list ul li a {
+  font-size: 18px;
+  font-weight: 400;
+  color: #003e7e;
+}
+
+.services-text h3 {
+  text-transform: uppercase;
+}
+
+.services-text ul {
+  padding-left: 20px;
+}
+
+
+
+/* CASE - STUDY */
+
+.case-banner {
+  height: 300px;
+}
+
+/*.banner {
+  background-image: url('../images/access.jpg');
+  height: 300px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  margin-top: 40px;
+  width: 100%;
+  text-align: center;
+  background-size: contain;
+}*/
+
+
+.banner {
+  display: flex;
+  align-items: center;
+  height: 300px;
+  /*background-image: url("../images/access.jpg");*/
+  background-size: cover;
+  background-position: center;
+  margin-top: 40px;
+}
+
+
+.banner h1 {
+  display: inline-block;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 48px;
+  text-align: center;
+ /* font-family: 'Signika', sans-serif; */
+ font-family: Trebuchet MS!important;
+}
+
+.are-des .container {
+  /*border-bottom: 1px solid #003e7e;*/
+  padding-top: 40px;
+  /*padding-bottom: 40px;*/
+}
+
+.are-des p, .are-long p {
+  color: #524e26;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0;
+}
+
+.are-long {
+  margin-top: 40px;
+}
+
+.are-long h3 {
+  font-size: 24px;
+  font-weight: 300;
+  color: #524e26;
+}
+
+.are-long span {
+  font-size: 18px;
+  font-weight: 300;
+  color: #524e26;
+}
+
+.are-title {
+  margin-bottom: 30px;
+}
+
+.are-desp p {
+    margin-bottom: 20px;
+}
+
+.are-desp a {
+  font-size: 18px;
+  font-weight: 400;
+  color: #524e26;
+  text-decoration: none;
+}
+
+.are-frame p, .are-frame a {
+  color: #003e7e;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.are-frame a {
+  text-decoration: underline;
+}
+
+.are-imgs img {
+  width: 100%;
+}
+
+section.are-imgs {
+    margin-top: 10px;
+}
+
+.are-imgs p {
+  font-weight: 300;
+  font-size: 18px;
+  color: #5f6062;
+  margin-top: 10px;
+}
+
+
+/* HOME PAGE IMAGE ROLL HOVER*/
+
+.serv-dir:hover .overlay {
+  width: 100%;
+}
+.serv-dir img {
+    width: 100%;
+    height: 100%;
+}
+.serv-text {
+    z-index: 99;
+}
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 0;
+    padding: 0 15px;
+    height: 100%;
+
+    /*transition: .5s ease;*/
+}
+
+.proj_text {
+    margin-top: 15px;
+}
+.proj_text p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #003e7e;
+  }
+  .proj_text p a{
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: underline!important;
+    color: #003e7e!important;
+  }
+  .proj_text p a:hover{
+    font-size: 18px;
+    font-weight: 400;
+    color: #003e7e!important;
+  }
+  .footer-deg {
+    padding-right: 31px;
+    padding-left:  31px;
+}
+
+
+
+/* Final Feedbacks (Mislaneous) */
+
+/*.are-long .row, .are-imgs .row {
+    margin: 0 -30px;
+}*/
+
+.are-desp {
+    padding-right: 30px;
+}
+
+.are-frame {
+  padding-left: 30px;
+}
+
+.des1, .des2 {
+     border-bottom: 1px solid #003e7e;
+     padding-bottom: 40px;
+     padding-right: 0;
+     padding-left: 0;
+ }
+
+ .aree-des .row {
+    margin: 0;
+ }
+
+ header {
+    height: 140px;
+}
+.are-frame1{display: none;}
+.are-frame2{display: block;}
