@@ -16,36 +16,37 @@
 			<div class="container footer-deg">
 				<div class="row">
 					<div class="col-md-6 address">
-					  <?php if ( is_active_sidebar( 'sidebar-5' ) ) : ?>
-                                   <?php dynamic_sidebar( 'sidebar-5' ); ?>
-                              <?php endif; ?>
+						<?php if ( is_active_sidebar( 'sidebar-5' ) ) : ?>
+            <?php dynamic_sidebar( 'sidebar-5' ); ?>
+            <?php endif; ?>
 					</div>
 					<div class="col-md-6 copyright">
 						<?php if ( is_active_sidebar( 'sidebar-6' ) ) : ?>
-                                   <?php dynamic_sidebar( 'sidebar-6' ); ?>
-                              <?php endif; ?>
+            <?php dynamic_sidebar( 'sidebar-6' ); ?>
+            <?php endif; ?>
 					</div>
 				</div>
 			</div>
 		</footer>
 <?php wp_footer(); ?>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
-	
+
 jQuery(document).ready(function() {
   jQuery("#toggle").click(function() {
     var elem = jQuery("#toggle").text();
     if (elem == "See How Rightt Structures Met the Challenge") {
-    
+
       jQuery("#toggle").text("read less story");
-      
+
      jQuery(".full_con").slideDown();
-     
+
     } else {
-    
+
       jQuery("#toggle").text("See How Rightt Structures Met the Challenge");
       jQuery(".full_con").slideUp();
-   
+
     }
   });
 });
@@ -56,13 +57,13 @@ jQuery(document).ready(function() {
  /* jQuery("#menuToggle").click(function(){
 
     jQuery("#menuToggle input:checked span").css('background','#fff!important');
-         
+
   });*/
-    
-  
+
+
 });
 jQuery(document).ready(function() {
-	var url= window.location.href; 
+	var url= window.location.href;
 	 var about = url.includes("about");
 	 var services = url.includes("services");
 	 var projects = url.includes("projects");

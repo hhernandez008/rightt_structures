@@ -45,7 +45,7 @@ get_header('about');
                     <div class="caseStudy">
 
                         <div class="row case-study">
-                                <?php $args = array('post_type' => 'projects','posts_per_page' => 10,'order'=>'ASC','project_category'=>'secoandry'); ?>
+                                <?php $args = array('post_type' => 'projects','posts_per_page' => 10,'order'=>'ASC','project_category'=>'secondary'); ?>
  <?php $loop = new WP_Query($args);
 ?>
   <?php if ( $loop->have_posts() ) : while ( $loop->have_posts() ) : $loop->the_post();
