@@ -5,12 +5,32 @@ Template Name: New Home
 	get_header();
 ?>
 
+<!-- Opening Image & Vision -->
+<section class="opener">
+	<div class="container">
+		<?php while ( have_posts() ) : ?>
+			<?php the_post(); ?>
+			<?php the_content(); ?>
+			<!-- Need to figure out how the seperate the image and the quote in the
+		  contnet so that I can apply different classes and formatting. -->
+		<div class="banner-img">
+			<!-- Image full width -->
+
+		</div>
+		<div class="slogan">
+
+
+		</div>
+	<?php endwhile;
+	wp_reset_postdata();
+	?>
+	</div>
+</section>
+
 <!-- Images and links to ARE sections -->
-<section class="services-img">
+<!-- <section class="services-img">
 	<div class="container">
 		<div class="row">
-
-
 
 			<?php $args = array('post_type' => 'projects','posts_per_page' =>9,'order'=>'ASC','project_category'=>'primary'); ?>
 			<?php $loop = new WP_Query($args); ?>
@@ -35,10 +55,10 @@ Template Name: New Home
 
 		</div>
 	</div>
-</section>
+</section> -->
 
 <!-- Company info/description -->
-<section class="website-descrip">
+<!-- <section class="website-descrip">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4"></div>
@@ -53,5 +73,5 @@ Template Name: New Home
 			</div>
 		</div>
 	</div>
-</section>
+</section> -->
 <?php get_footer(); ?>
